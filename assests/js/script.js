@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["IT Service Management Analyst" , "Major Incident, Problem and Change Management "],
+        strings: ["IT Service Management Analyst" , "Major Incident, Problem and Change Management"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
