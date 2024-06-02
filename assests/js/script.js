@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["IT Infrastructure Services Analyst - Associate Professional Service Delivery And Project Coordinator"],
+        strings: ["IT Infrastructure Services Analyst - Associate Professional Service Delivery and Field Dispatch Coordinator"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
