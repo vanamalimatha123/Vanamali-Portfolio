@@ -312,36 +312,98 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="work" aria-labelledby="projects-heading">
-      <h2 class="heading"><i class="fas fa-briefcase"></i> <span id="projects-heading">Key Projects</span></h2>
+<section id="work" aria-labelledby="projects-heading">
+  <h2 class="heading"><i class="fas fa-briefcase"></i> <span id="projects-heading">Key Projects</span></h2>
 
-      <div class="project-list">
-        <div class="proj">
-          <h4>Legacy Dell VMAX Decommissioning (Deutsche Bank — UK)</h4>
-          <div class="muted">Led decommissioning of 60+ Dell VMAX units, released 300x 42U rack spaces, saved power and cost.</div>
-        </div>
-
-        <div class="proj">
-          <h4>Storage Migration (VMAX20K → VMAX250F)</h4>
-          <div class="muted">Coordinated migration of 50+ EMC arrays; improved uptime and delivered £6.6M infrastructure cost savings.</div>
-        </div>
-
-        <div class="proj">
-          <h4>Philips Datacentre Migration</h4>
-          <div class="muted">Relocated 200+ servers into virtual environment within 90 days with minimal downtime.</div>
-        </div>
-
-        <div class="proj">
-          <h4>Google Cloud Readiness Program</h4>
-          <div class="muted">Program Lead — enabled 90+ employees, 80+ certifications, improved cloud readiness.</div>
-        </div>
-
-        <div class="proj">
-          <h4>National Dispatch Operations — Pomeroy</h4>
-          <div class="muted">Managed daily dispatch & field ops for US regions handling 100+ daily work orders (IMACD, break/fix).</div>
-        </div>
+  <div class="project-list grid">
+    <!-- Project 1 -->
+    <div class="proj card">
+      <img src="https://cdn.pixabay.com/photo/2020/04/17/06/49/server-5056485_1280.jpg" alt="Legacy Dell VMAX Decommissioning" loading="lazy" class="proj-img" />
+      <div class="proj-content">
+        <h4>Legacy Dell VMAX Decommissioning (Deutsche Bank — UK)</h4>
+        <p class="muted">Led decommissioning of 60+ Dell VMAX units, released 300x 42U rack spaces, saved power and cost.</p>
       </div>
-    </section>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="proj card">
+      <img src="https://cdn.pixabay.com/photo/2021/02/09/14/26/data-center-5997717_1280.jpg" alt="Storage Migration" loading="lazy" class="proj-img" />
+      <div class="proj-content">
+        <h4>Storage Migration (VMAX20K → VMAX250F)</h4>
+        <p class="muted">Coordinated migration of 50+ EMC arrays; improved uptime and delivered £6.6M infrastructure cost savings.</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="proj card">
+      <img src="https://cdn.pixabay.com/photo/2019/04/09/14/42/server-room-4110724_1280.jpg" alt="Philips Datacentre Migration" loading="lazy" class="proj-img" />
+      <div class="proj-content">
+        <h4>Philips Datacentre Migration</h4>
+        <p class="muted">Relocated 200+ servers into virtual environment within 90 days with minimal downtime.</p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="proj card">
+      <img src="https://cdn.pixabay.com/photo/2020/05/21/13/45/cloud-computing-5201990_1280.jpg" alt="Google Cloud Readiness Program" loading="lazy" class="proj-img" />
+      <div class="proj-content">
+        <h4>Google Cloud Readiness Program</h4>
+        <p class="muted">Program Lead — enabled 90+ employees, 80+ certifications, improved cloud readiness.</p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="proj card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/31/customer-service-1244803_1280.jpg" alt="National Dispatch Operations — Pomeroy" loading="lazy" class="proj-img" />
+      <div class="proj-content">
+        <h4>National Dispatch Operations — Pomeroy</h4>
+        <p class="muted">Managed daily dispatch & field ops for US regions handling 100+ daily work orders (IMACD, break/fix).</p>
+      </div>
+    </div>
+  </div>
+</section>
+.project-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #111827;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.proj-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #2563eb;
+}
+
+.proj-content {
+  padding: 1.2rem;
+}
+
+.proj-content h4 {
+  color: #f9fafb;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.proj-content .muted {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
 
     <!-- CERTIFICATIONS -->
     <section id="certification" aria-labelledby="certs-heading">
