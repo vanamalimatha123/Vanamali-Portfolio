@@ -1,28 +1,48 @@
-<head>
-  <title>My Portfolio</title>
-  <style>
-    /* your existing CSS */
-  </style>
-</head>
+/* scroll top ends */
+#scroll-top.active{
+  top: calc(100% - 12rem);
+}
+/* scroll top ends */
+/* === PROJECT SECTION STYLES === */
+.project-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-<style>
-  /* your old CSS */
+.card {
+  background: #111827;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  /* === Project section styles === */
-  .project-list.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
 
-  .card {
-    background: #111827;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.proj-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #2563eb;
+}
 
-  /* and the rest of your CSS */
-</style>
+.proj-content {
+  padding: 1.2rem;
+}
+
+.proj-content h4 {
+  color: #f9fafb;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.proj-content .muted {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
