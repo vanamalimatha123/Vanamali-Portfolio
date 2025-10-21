@@ -368,7 +368,6 @@
             <form id="contactForm" onsubmit="sendMail(event)" aria-label="Contact form">
               <div class="field"><input id="name" type="text" placeholder="Your name" required aria-label="Name" /></div>
               <div class="field"><input id="email" type="email" placeholder="Your email" required aria-label="Email" /></div>
-              <div class="field"><input id="phone" type="tel" placeholder="Phone (optional)" aria-label="Phone" /></div>
               <div class="field"><textarea id="message" placeholder="Message" required aria-label="Message"></textarea></div>
               <div><button class="btn" type="submit">Send Message <i style="margin-left:8px" class="fas fa-paper-plane"></i></button></div>
             </form>
@@ -447,14 +446,12 @@
       e.preventDefault();
       const name = encodeURIComponent(document.getElementById('name').value.trim());
       const email = encodeURIComponent(document.getElementById('email').value.trim());
-      const phone = encodeURIComponent(document.getElementById('phone').value.trim());
       const message = encodeURIComponent(document.getElementById('message').value.trim());
       const subject = encodeURIComponent('Portfolio site contact from ' + name);
       const body = encodeURIComponent(
         'Name: ' + decodeURIComponent(name) + '\n' +
         'Email: ' + decodeURIComponent(email) + '\n' +
-        'Phone: ' + decodeURIComponent(phone) + '\n\n' +
-        'Message:\n' + decodeURIComponent(message)
+       'Message:\n' + decodeURIComponent(message)
       );
       // Create mailto
       const to = 'mathavanamali087@gmail.com';
