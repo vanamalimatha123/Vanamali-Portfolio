@@ -1,9 +1,7 @@
-/* scroll top ends */
-#scroll-top.active{
-  top: calc(100% - 12rem);
-}
-/* scroll top ends */
-/* === PROJECT SECTION STYLES === */
+assets/css/style.css
+
+
+/* ==== PROJECT SECTION STYLES ==== */
 .project-list.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
