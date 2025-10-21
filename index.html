@@ -1,583 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Matha, Vanamali ,  Project Coordinator @ SISL Infotech (UK) Pvt. Ltd | IT Service Delivery Coordinator & ITSM Analyst (IPC) | ServiceNow | ITIL V4 & Cloud Certified ☁️ | Ex-Pomeroy & DXC" />
-    <meta name="description" content="Welcome Matha Vanamali's Portfolio. 
-    Project Coordinator @ SISL Infotech (UK) Pvt. Ltd | IT Service Delivery Coordinator & ITSM Analyst (IPC) | ServiceNow | ITIL V4 & Cloud Certified ☁️ | Ex-Pomeroy & DXC " />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assests/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assests/images/Vanamali.jpeg" type="image/x-png">
-    <title>Portfolio | Matha Vanamali </title>
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matha Vanamali — Portfolio</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Matha Vanamali — ITIL v4 ITSM & Service Delivery Project Coordinator. ServiceNow | ITIL | Major Incident | Change Management | Service Delivery" />
+  <meta name="author" content="Matha Vanamali" />
+  <meta name="keywords" content="Matha Vanamali, ITSM, ServiceNow, ITIL, Project Coordinator, Service Delivery, Dispatch" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Matha Vanamali — ITSM & Service Delivery" />
+  <meta property="og:description" content="ITIL v4 certified ITSM & Service Delivery Project Coordinator. Experience in Pomeroy, DXC, ServiceNow, change & incident management." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- Fav icon (replace path if needed) -->
+  <link rel="shortcut icon" href="./assests/images/Vanamali.jpeg" type="image/x-png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#0ea5a4; /* teal */
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      --maxwidth:1100px;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body{
+      margin:0;
+      background: linear-gradient(180deg, var(--bg) 0%, #071022 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      min-height:100vh;
+    }
+
+    /* container */
+    .wrap { max-width:var(--maxwidth); margin:0 auto; padding:18px; }
+
+    /* header / nav */
+    header {
+      position: sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(6,10,16,0.6), rgba(6,10,16,0.35));
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .nav-inner { display:flex; align-items:center; gap:18px; justify-content:space-between; max-width:var(--maxwidth); margin:0 auto; padding:10px 18px; }
+    .logo { color:var(--accent); font-weight:700; text-decoration:none; display:flex; gap:8px; align-items:center; }
+    .logo i{ font-size:20px; transform:translateY(1px); }
+
+    nav.navbar ul { list-style:none; margin:0; padding:0; display:flex; gap:10px; align-items:center; }
+    nav.navbar a { color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:8px; font-size:14px; display:inline-block; }
+    nav.navbar a:hover, nav.navbar a.active { background:var(--glass); color:#fff; }
+
+    /* responsive: collapse to hamburger */
+    #menuBtn{ display:none; cursor:pointer; color:var(--muted); font-size:20px; background:none; border:none; }
+    @media (max-width:920px){
+      nav.navbar{ display:none; position:absolute; right:18px; top:64px; background:linear-gradient(180deg, rgba(8,12,18,0.95), rgba(6,10,16,0.95)); border-radius:8px; padding:8px; width:220px; box-shadow:0 6px 30px rgba(0,0,0,0.6);}
+      nav.navbar.open{ display:block; }
+      #menuBtn{ display:inline-flex; }
+    }
+
+    /* hero */
+    .hero {
+      display:flex; gap:28px; align-items:center; padding:48px 0; min-height:68vh;
+    }
+    .hero .left { flex:1; }
+    .hero h1 { margin:0 0 8px 0; font-size:34px; letter-spacing:0.2px; color:#fff; }
+    .hero h1 span { color:var(--accent); font-weight:700; }
+    .hero p { margin:0 0 18px 0; color:var(--muted); max-width:680px; font-size:16px; }
+    .btn { display:inline-flex; gap:8px; align-items:center; padding:10px 14px; border-radius:10px; background:transparent; color:var(--accent); border:1px solid rgba(14,165,164,0.15); text-decoration:none; font-weight:600; }
+    .social-icons { margin-top:14px; display:flex; gap:8px; align-items:center; }
+    .social-icons a { width:40px; height:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; background:rgba(255,255,255,0.02); color:var(--muted); text-decoration:none; }
+    .social-icons a:hover{ color:#fff; transform:translateY(-3px); }
+
+    .hero .right { width:220px; flex-shrink:0; }
+    .profile {
+      width:220px; height:220px; border-radius:14px; overflow:hidden; box-shadow: 0 10px 40px rgba(2,6,12,0.6); border: 1px solid rgba(255,255,255,0.03);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+    .profile img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+    /* sections */
+    section { padding:48px 0; border-top: 1px solid rgba(255,255,255,0.02); }
+    .heading{ display:flex; gap:12px; align-items:center; font-size:20px; margin-bottom:18px; color:#fff; }
+    .heading i{ color:var(--accent); font-size:18px; margin-right:6px;}
+
+    /* about */
+    .about-row{ display:flex; gap:28px; align-items:flex-start; }
+    .about-left{ width:260px; }
+    .about-right{ flex:1; }
+
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03); }
+
+    .info-grid{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .info-grid .item{ background:rgba(255,255,255,0.02); padding:10px 12px; border-radius:8px; color:var(--muted); font-size:14px; }
+
+    /* skills */
+    .skills-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; }
+    .skill { background:transparent; padding:12px; border-radius:8px; }
+    .skill .label{ display:flex; justify-content:space-between; font-size:14px; color:var(--muted); margin-bottom:8px; }
+    .progress { height:10px; background:rgba(255,255,255,0.03); border-radius:10px; overflow:hidden; }
+    .progress > span{ display:block; height:100%; background:linear-gradient(90deg, var(--accent), #06b6d4); width:40%; }
+
+    /* timeline / experience */
+    .timeline { display:flex; flex-direction:column; gap:14px; }
+    .timeline-item { display:flex; gap:16px; align-items:flex-start; background:rgba(255,255,255,0.02); padding:14px; border-radius:10px; border:1px solid rgba(255,255,255,0.02); }
+    .timeline-item .meta { min-width:180px; }
+    .timeline-item h3{ margin:0; font-size:16px; color:#fff; }
+    .timeline-item p{ margin:6px 0 0 0; color:var(--muted); font-size:14px; }
+
+    /* projects */
+    .projects { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+    .project-card { background:rgba(255,255,255,0.02); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02); overflow:hidden; }
+    .project-card img{ width:100%; height:140px; object-fit:cover; border-radius:8px; display:block; margin-bottom:8px; }
+
+    /* certifications row */
+    .cert-row{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .cert-row img{ width:150px; height:auto; border-radius:6px; object-fit:cover; border:1px solid rgba(255,255,255,0.03); }
+
+    /* contact */
+    .contact-grid{ display:grid; grid-template-columns: 1fr 360px; gap:18px; align-items:start; }
+    @media (max-width:920px){ .about-row, .contact-grid{ flex-direction:column; grid-template-columns:1fr; } .contact-grid{ grid-template-columns:1fr; } .hero{ flex-direction:column-reverse; align-items:center; gap:18px; } .hero .right{ width:200px; } }
+
+    .form .field{ margin-bottom:10px; }
+    input, textarea { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:#e6eef6; outline:none; }
+    textarea{ min-height:120px; resize:vertical; }
+
+    footer { padding:20px 0; text-align:center; color:var(--muted); font-size:14px; border-top:1px solid rgba(255,255,255,0.02); }
+
+    /* small helpers */
+    .muted { color:var(--muted); font-size:14px; }
+    .chip { display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.02); font-size:13px; color:var(--muted); margin-right:6px; }
+  </style>
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- pre loader -->
-<div class="loader-container">
-  <img draggable="false" src="./assests/images/preloader.gif" alt="">
-</div>
+  <!-- NAV -->
+  <header>
+    <div class="nav-inner wrap" role="navigation" aria-label="Main navigation">
+      <a class="logo" href="#home"><i class="fab fa-node-js"></i> Vanamali</a>
 
+      <button id="menuBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
 
-<!-- navbar starts -->
-<header>
-        <a href="/Portfolio-Saurav-Mukherjee" class="logo"><i class="fab fa-node-js"></i> Vanamali </a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#Acheivements">Acheivements</a></li>
-            <li><a href="#work">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-
-
-
-
-<!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-    <h3>Hi There,<br/> I'm Vanamali <span>Matha</span></h3>
-    <p>I am into  <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" href="https://www.linkedin.com/in/vanamali-matha-811035232" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" href="https://github.com/vanamalimatha123" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="medium" href="https://medium.com/@mathavanamali121" target="_blank"><i class="fab fa-medium"></i></a></li>
-          <li><a class="instagram" href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="gmail" href="mailto:vanamali121@gmail.com " target="_blank"><i class="fas fa-envelope"></i></a></li> 
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certs">Certifications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="wrap">
+    <section id="home" class="hero" aria-labelledby="home-heading">
+      <div class="left">
+        <h1 id="home-heading">Hi there — I'm <span>Matha Vanamali</span></h1>
+        <p><strong>IT Project Coordinator | Service Delivery & ITSM Analyst</strong><br>
+           Preferred: Chennai, Bangalore, Hyderabad or Remote • Availability: Immediate (LWD Feb 24, 2025) • Flexible for 24×7 rotational shifts</p>
+
+        <p class="muted">I am an ITIL v4–certified ITSM & Service Delivery Project Coordinator with 3.5+ years of global experience across BFSI, Healthcare, Retail, Telecom, Manufacturing and IT sectors.</p>
+
+        <div style="margin-top:12px;">
+          <a class="btn" href="#about">About Me <i class="fas fa-arrow-down"></i></a>
+          <a class="btn" href="#contact" style="margin-left:8px;">Contact <i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="social-icons" style="margin-top:14px;">
+          <a title="LinkedIn" href="https://www.linkedin.com/in/vanamalimatha123" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a title="GitHub" href="https://github.com/vanamalimatha123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a title="Medium" href="https://medium.com/@mathavanamali121" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+          <a title="Email" href="mailto:mathavanamali121@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div style="margin-top:14px;" class="muted">
+          <span class="chip">Email: mathavanamali121@gmail.com</span>
+          <span class="chip">Phone: +91-9381919840</span>
+        </div>
       </div>
-    </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assests/images/Vanamali.jpeg" alt="">
-</div>
-</section>
-<!-- hero section ends -->
 
-
-<!-- about section starts -->
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
-
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assests/images/image 1.jpeg" alt="">
-    </div>
-    <div class="content">
-      <h3> <font color = "Green"> I’m Vanamali</h3> </font>
-        <p> Greetings! <br> 
-         ITIL v4–certified ITSM & Service Delivery Project Coordinator with over 3.5 years of global experience supporting clients across BFSI, Healthcare, Retail, Telecom, Manufacturing, Automotive, Construction, and IT sectors. Adept at managing end-to-end ITIL processes including Incident (P1–P4), Change, Problem, Knowledge, and Service Request Management using platforms like ServiceNow and SIMS across US, UK, EMEA, and APAC regions. Proven expertise in field service operations, technician Dispatch, Workforce & Field Coordination (FSM/WFM), IMACD operations, and real-time logistics tracking, and remote troubleshooting through tools like Appgate, Ivanti, and PuTTY. Highly skilled in bridge/CAB call facilitation, RCA/PIR analysis, CMDB audits, and MIS/dashboard reporting, ensuring transparency and service optimization. Known for delivering 98% SLA/OLA compliance, driving 30% MTTR reduction, and supporting 24×7 global operations. A proactive communicator and dependable cross-functional collaborator, consistently recognized for excellence in client engagement, team training, and high-pressure, multitasking environments.       </p>
-        <div class="box-container">
-            <div class="box">
-              <p><span> age: </span> 24</p>
-              <p><span> Company : DXC Technology</span> </p>
-            </div>
-            <div class="box">
-              <p><span> email : </span> vanamali121@gmail.com</p>
-              <p><span> place : </span> Vizag, India-532127 </p>
-            </div>
+      <div class="right">
+        <div class="profile card" aria-hidden="true">
+          <!-- replace with your photo path -->
+          <img src="./assests/images/Vanamali.jpeg" alt="Portrait of Matha Vanamali" onerror="this.src='https://via.placeholder.com/400x400?text=Profile'">
         </div>
-        
-        <div class="resumebtn">
-            <a href="./assests/Vanamalimatha_ServiceNow_ITSM__Major_Incident_Problem_Change_Management_3YOE_Resume.pdf" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
+      </div>
+    </section>
 
-    </div>
-    </div>
-</section>
-<!-- about section ends -->
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 class="heading" id="about-heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
 
-<!-- skills section starts -->
-<section class="skills" id="skills">
+      <div class="about-row">
+        <aside class="about-left card">
+          <img src="./assests/images/image 1.jpeg" alt="Matha photo" style="width:100%; height:200px; object-fit:cover; border-radius:8px; display:block; margin-bottom:12px;" onerror="this.src='https://via.placeholder.com/600x400?text=Photo'">
+          <div class="info-grid">
+            <div class="item">Age: 24</div>
+            <div class="item">Location: Vizag (Open to Chennai/Bangalore/Hyderabad/Remote)</div>
+            <div class="item">Availability: Immediate (LWD: Feb 24, 2025)</div>
+            <div class="item">Open to 24×7 rotations</div>
+          </div>
+        </aside>
 
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+        <div class="about-right">
+          <div class="card">
+            <h3 style="margin-top:0;">Professional Summary</h3>
+            <p style="color:var(--muted); margin-top:8px; white-space:pre-line;">
+ITIL v4–certified ITSM & Service Delivery Project Coordinator with over 3.5 years of global experience supporting clients across BFSI, Healthcare, Retail, Telecom, Manufacturing, Automotive, Construction, and IT sectors. Adept at managing end-to-end ITIL processes including Incident (P1–P4), Change, Problem, Knowledge, and Service Request Management using platforms like ServiceNow and SIMS across US, UK, EMEA, and APAC regions. Proven expertise in field service operations, technician Dispatch, Workforce & Field Coordination (FSM/WFM), IMACD operations, and real-time logistics tracking, and remote troubleshooting through tools like Appgate, Ivanti, and PuTTY. Known for delivering 98% SLA/OLA compliance, driving 30% MTTR reduction, and supporting 24×7 global operations.</p>
 
-    <div class="container">
-          <div class="row">
-              <div class="col">
-
-                <div class="bar">
-                    <div class="info">
-                      <span> ServiceNow (Snow) </span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line html"></div>
-                </div>
-
-                <div class="column"> 
-                <div class="bar">
-                    <div class="info">
-                      <span>Incident Management</span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line css"></div>
-                  </div>
-
-                  <div class="bar">
-                    <div class="info">
-                      <span>Change Management</span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line javascript"></div>
-                  </div>
-                </div>
-                  <div class="bar">
-                    <div class="info">
-                      
-                                                    
-                  <div class="bar">
-                    <div class="info">
-                      <span>Knowledge Management</span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line mysql"></div>
-                  </div>
-
-                                  
-                  <div class="bar">
-                    <div class="info">
-                      <span>Service Levels  (SLA/OLA)</span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line cms"></div>
-                  </div>
-
-                  
-                  <div class="bar">
-                    <div class="info">
-                     <span> Documentation, Reporting and Monitoring</span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line reactjs"></div>
-                  </div>
+            <div style="margin-top:12px;">
+              <strong>Tools & Certs:</strong>
+              <div style="margin-top:8px;" class="muted">
+                ServiceNow, Jira, Dynatrace, AWS Connect, SIMS, Tekumo, FieldNation, SharePoint, Putty, Appgate, Ivanti, MS Office 365.<br>
+                Certifications: ITIL V4 Foundation | Project Management Foundations | GCP Associate Cloud Engineer
               </div>
-
-              <div class="col">
-                <div class="bar">
-                    <div class="info">
-                      <span> Project Management</span></i>
-                      <span>70%</span>
-                    </div>
-                    <div class="line java"></div>
-                  </div>
-                  
-                  <div class="col">
-                <div class="bar">
-                    <div class="info">
-                      <span>Stakeholder Management </span></i>
-                      <span>80%</span>
-                    </div>
-                    <div class="line reactjs"></div>
-                  </div>
-
-                  <div class="col">
-                    <div class="bar">
-                        <div class="info">
-                          <span>Customer satisfaction </span></i>
-                          <span>80%</span>
-                        </div>
-                        <div class="line android"></div>
-                      </div>
-                
-
-                  
             </div>
-      </div>
-</div>
-</section>
-<!-- skills section ends -->
-
-
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-      <div class="box">
-        <div class="image">
-     
-        <img draggable="false" src="./assests/images/educat/school.jpeg" alt="">
-        </div>
-        <div class="content">
-        <h3>MBA</h3>
-        <p> School of management studies - MRPG College</p>
-        <a href="http://www.mrpgcollege.com/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-        
-
-      </a>
-        <h4>2018-2021 | Completed</h4>
-        </div>
-      </div>
-  
-
-    <div class="box">
-        <div class="image">
-        
-        <img draggable="false" src="./assests/images/educat/College.jpeg" alt="">
-        
-        </div>
-        <div class="content">
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>Sri GCSR College </p>
-        <a href="https://www.srigcsrcollege.org/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-        <h4>2015-2018 | Completed</h4>
-      </a> 
-        </div>
-    </div>
-
-   
-</div>
-</section>
-<!-- education section ends -->
-
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  
-  <div class="box-container">
-  
-  
-     <div class="box tilt">
-      <img draggable="false" src="./assests/images/projects/robot.jpg" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3> Movement of vehicle by Gesture Control project </h3>
-        </div>
-        <div class="desc">
-          <p>
-            Technology Used: Car model , Some Connecting’s wires , Transmitter Circuit ,Receiver Circuit etc.,
-            Description: Shows all the vehicles present in shop. User can view the specification of vehicles. User can book the bike; Test ride and user gets a confirmation mail.</p>
-            <div class="btns">
-            <a href="https://https://github.com/vanamalimatha123/Vanamali-Portfolio/tree/main/projects" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-             <a href="https://ghttps://github.com/vanamalimatha123/Vanamali-Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
-    </div>
-         <div class="box-container">
-  <div class="box tilt">
-    <img draggable="false" src="./assests/images/projects/DXC Project.jpg" alt="" />
-    <div class="content">
-      <div class="tag">
-      <h3>Legacy Dell VMAX Decommissioning Storage Arrays Migration</h3>
-      </div>
-      <div class="desc">
-        <p>•	Initiated Requests for Change (RITMs) using ServiceNow, ensuring a seamless global transition of vital assets. </p>
-        <p>•	Led Change & Incident Management using ServiceNow, including RITM creation, change approvals, bridge calls, CAB meetings, and post-escalation activities to ensure seamless service continuity and SLA adherence. </p>
-        <p>•	Managed data center decommissioning (VMAX 60K) by coordinating with vendors, initiating changes for data sanitization, network/power removal, and releasing 300 x 42U rack spaces and 13.3Kw power per unit, achieving operational efficiency and cost savings. </p>
-        <p>•	Formulated efficient follow-up processes for change approvals with application and technical teams through email communication  </p>
-        <p>•	created and enhanced ITSM process reporting, workflows, and automation to streamline service delivery and support ITSM tool improvements. </p>
-        <p>•	Performed proactive monitoring, incident response, and outage resolution, collaborating with vendors and technical teams to drive root cause analysis, approvals, and progress reporting to project managers. </p>
-        <div class="btns">
-          <a href="https://vanamali.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-           <a href="https://github.com/vanamalimatha123/Vanamali-Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="box-container">
-    <div class="box tilt">
-      <img draggable="false" src="./assests/images/projects/3_Cloud Migration" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>     GCP Readiness Program  </h3>
-        </div>
-        <div class="desc">
-          <p>•	Led the GCP Readiness Kick-off Program for 100+ employees and collaborated with cross-functional teams to design, deploy, and manage cloud platforms across multiple projects, ensuring alignment with business objectives. </p>
-          <p>•	Implemented and fine-tuned container orchestration with Kubernetes for diverse applications, enhancing scalability and reliability.</p>
-          <p>•	Collaborated with cross-functional teams to define and prioritize cloud-related projects, aligning initiatives with business objectives.</p>
-                              <div class="btns">
-            <a href="https://github.com/vanamalimatha123/Migration-Projects" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-             <a href="https://github.com/vanamalimatha123/Vanamali-Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 class="heading" id="skills-heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+      <div class="card">
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="label"><span>ServiceNow (SNOW)</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Incident Management</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Change Management</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Problem & Knowledge Mgmt</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>SLA / OLA / SLM</span><span>85%</span></div>
+            <div class="progress"><span style="width:85%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Service Delivery / Dispatch</span><span>85%</span></div>
+            <div class="progress"><span style="width:85%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Project Management</span><span>75%</span></div>
+            <div class="progress"><span style="width:75%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Stakeholder Management</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="label"><span>Reporting / MIS / Dashboards</span><span>80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
           </div>
         </div>
       </div>
-    </div>
-  <div class="box tilt">
-    <img draggable="false" src="./assests/images/projects/DXC Project.jpg" alt="" />
-    <div class="content">
-      <div class="tag">
-      <h3>Cloud VM Migration</h3>
-      </div>
-      <div class="desc">
-        <p> •	Utilized tools like Migrate for Compute Engine (Velostrata), Terraform, and Google Admin console for efficient VM migrations from AWS to GCP.</p>
-        <p> •	Developed expertise in configuring AWS instances for migration, including setting up migration service accounts and demonstrating successful cross-cloud VM migration capability between AWS and GCP.</p>
-        <p> •	Hands-on experience in implementing and optimizing DevOps tools like Jenkins, as well as CI/CD pipelines using GitLab CI for streamlined automated deployment processes. </p>
-        <div class="btns">
-          <a href="https://vanamali.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-           <a href="https://github.com/vanamalimatha123/Migration-Projects" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 class="heading" id="experience-heading"><i class="fas fa-briefcase"></i> Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="meta">
+            <div style="font-weight:700; color:var(--accent)">Pomeroy Technologies Pvt. Ltd.</div>
+            <div class="muted">Senior Analyst — Service/Project Coordinator (Field Dispatch)</div>
+            <div class="muted" style="margin-top:6px">May 2024 – Feb 2025 • Chennai (Remote)</div>
+          </div>
+          <div>
+            <h3>Key responsibilities & achievements</h3>
+            <p class="muted">Delivered ITIL-aligned service delivery support, coordinated field engineers & vendors, scheduled technicians for IMACD/FSR work, managed logistics & work orders, used Appgate & Ivanti for remote troubleshooting, prepared MIS/SLA dashboards, led KTs, and received Client Appreciation awards for service coordination.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="box-container">
-    <div class="box tilt">
-      <img draggable="false" src="./assests/images/projects/myprofile1.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="https://vanamali.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/vanamalimatha123/Migration-Projects" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+
+        <div class="timeline-item">
+          <div class="meta">
+            <div style="font-weight:700; color:var(--accent)">DXC Technologies Pvt. Ltd.</div>
+            <div class="muted">Analyst III — Infrastructure Services (SDC)</div>
+            <div class="muted" style="margin-top:6px">Sep 2021 – Jan 2024 • Chennai</div>
+          </div>
+          <div>
+            <h3>Key responsibilities & achievements</h3>
+            <p class="muted">Managed Change and Incident lifecycles (ServiceNow) across global CTB initiatives, acted as major incident coordinator for P1/P2 events, conducted CMDB audits, participated in CAB & PIRs, reduced unauthorized changes via a 4-eye review process, and received Champ Awards for performance.</p>
           </div>
         </div>
       </div>
-    </div>
 
-    
-  </section>
-  <!-- work project section ends -->
-  
-  <!-- certification section starts -->
-<section class="works" id="certification">
+      <div style="margin-top:12px;">
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </section>
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Certifcations</h2>
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 class="heading" id="projects-heading"><i class="fas fa-laptop-code"></i> Projects</h2>
 
-  <div class="Circle-container">
-        <div class="row">
-        <div class="column">
-
-          <img src="./assests/images/All Cloud Certified/ITIL 4 Foundation.jpg" alt="Snow" style="width:40%">    
-        <img src="./assests/images/All Cloud Certified/Google Digital Leader.png " alt="Snow" style="width:35%">
-        <a target="blank" href="https://www.credential.net/b03495ca-0063-4aef-8168-d421de57d1a8#gs.04jxt1" class="btn btn-primary" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-        <img src="./assests/images/All Cloud Certified/GCP ACE New Design.png" alt="Snow" style="width:35%">
-        <a target="blank" href="https://www.credential.net/6f57dccf-e65f-4f7f-a415-f5f77b8b52c6?_ga=2.136622840.973742122.1669436799-56937820.1668753291&_gl=1*gjs83u*_ga*NTY5Mzc4MjAuMTY2ODc1MzI5MQ..*_ga_FSDJZHHBH0*MTY2OTQ2NjExMS4xMC4wLjE2Njk0NjYxMTEuMC4wLjA/" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-        <img src="./assests/images/All Cloud Certified/AWS CPC.png" alt="Snow" style="width:35%">
-        <a target="blank" href="https://www.credly.com/earner/earned/badge/c6b10f81-e9b8-474b-acf7-20d3402d960f/" class="btn btn-primary" class="btn btn-primary" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-        <img src="./assests/images/All Cloud Certified/Microsoft Azure Fundamentals (AZ-900).png" alt="Snow" style="width:35%">
-        <a target="blank" href="https://www.credly.com/earner/earned/badge/e01af748-edf4-4959-9cb3-486099037e6a/" class="btn btn-primary" class="btn btn-primary" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-        <img src="./assests/images/All Cloud Certified/Microsoft Administrator Associate.png" alt="Snow" style="width:35%">
-        <a target="blank" href="https://www.credly.com/earner/earned/badge/2c775c83-f078-46ec-aee5-435297511b0d" class="btn btn-primary" class="btn btn-primary" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-        <img src="./assests/images/All Cloud Certified/Oracle Cloud Infrastructure 2023 Certified Foundations Associate.jpg" alt="Snow" style="width:40%">
-       <a target="blank" href="https://drive.google.com/file/d/1qZCr7-dMusCv2SXr56fScJ8JJv2VQq5Y/view" class="btn btn-primary" class="btn btn-primary" class="btn" target="_blank"><i class="fas fa-eye"></i> View Certificate</a>
-       </div>
-    
-  <div class="viewall">
-    <a href="#" class="btn"><span>View All</span>
-      </a>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-  
-  </section>
-  <!-- Certification section ends -->
-
-<!-- experience section starts -->
-<section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-    
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2> Pomeroy Technologies Pvt. Ltd. </h2>
-        </div>
-        <div class="desc">
-            <h3>  Senior Analyst : Field Service Delivery Coordinator </h3> 
-            <p> May 2024 to Feb 2025, Chennai (Remote)  </p><h3>  
-            <p> • As the Field Service Dispatch and Service Delivery Operations Coordinator at Pomeroy my role revolves around orchestrating seamless operations within the IT service delivery domain. </p>
-              <p> • With a keen focus on optimizing efficiency and effectiveness, I leverage my expertise in project management and IT service management (ITSM) operations to ensure that every facet of the service delivery chain functions smoothly. Being ITIL certified, I bring a structured approach to problem-solving and service enhancement initiatives. </p>
-                <p> • My primary objective is to elevate both field service dispatch and IT infrastructure analysis, driving towards enhanced performance and customer satisfaction. Responsible for overseeing and managing the dispatch of field service technicians, ensuring efficient and timely service delivery to clients. This role involves coordinating schedules, optimizing resource allocation, and maintaining effective communication between the field team and clients/customer satisfaction. </p>
-    <p> • 	Engaged in weekly meetings/calls with senior leadership and technical teams to address SLA failures and strategize future actions, defined specific metrics to measure performance, such as up-time, response time,resolution time, and availability, ensuring quantifiable and measurable indicators. </p>
-    <p> • Conducted knowledge transfer (KT) sessions to empower new team members and support staff with the  essential skills for effective incident management responsibilities. Regularly reviewed performance metrics of IT infrastructure and played a pivotal role in contributing to performance reports            </p>
-                                   </p>
-
-          
-        
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2> DXC Technologies Pvt. Ltd. </h2>
-        </div>
-        <div class="desc">
-            <h3>   IT Infrastructure Services Analyst </h3> 
-            <p>Sep 2021 - Jan 2024 </p><h3> 
-           <p> 
-              DXC Technology : IT Infrastructure Services Analyst in Cloud & ITO  - <br/>
-
-      <p>• Executed efficient RITMs, Change, and Incident Requests using ServiceNow ensuring global asset transitions with minimal downtime; collaborated with internal and external teams for successful project outcomes. </p>
-      <p>•	Coordinate end-to-end response to respond incidents, assessing severity, implementing mitigation activities, communicating across the organization, and ensuring proper documentation. </p>
-      <p>•	Managed changes pertaining to the Continuous Integration (CI) uplift and hosting requests for the database (DB) account, overseeing responsibilities ranging from planning, assignment, and follow-up to coordination and stakeholder engagement. Successfully ensured seamless asset transition and effective change management across global data centers. </p>
-      <p>•	Responsible for Organizational Change Management and Communications for Projects and Review Change Implementation Plan, Categorize and create Standard Changes templates that are required to be implemented in the client infrastructure. </p>
-      <p>•	Chase the Change implementing team after required approvals are received for the changes from the service owners for changes to be performed.
-        Schedule the Change timings after consultation with the required parties that must be implemented and Maintain Track of all Changes created, scheduled, and executed.         </p> 
-      <p>•	Act as primary Incident Coordinator for all internal Critical issues affecting infrastructure, Assign Severity & Priority to Major Incidents and manage Incidents and ensure minimal disruption to the service.
-        Detecting, logging, monitoring and escalating incidents and alerts to delivery support team or third party and senior management where appropriate investigation is required. Send incident notifications to the end user and support teams and documents that contain detail information.         </p>
-      <p>•	Coordinate with Resolving Groups, Support teams, vendors, and all Third-Party Organizations whenever a high Priority incident is being raised for restoration for all incidents/issues within mentioned Service Level Agreement (SLA) with minimum distraction to the business. </p>
-      <p>•	Provide exceptional customer service through timely communication, professionalism, and strong sense of urgency to customer stakeholders and executive management providing feedback on areas of improvement to facilitate expediting incident resolution.
-                Use Escalation matrix appropriately to get appropriate level of focus from technical teams and management.         </p>
-      <p>•	Investigate on the root cause of all the major incident and reoccurring issues for permanent fix and prepare and maintain Known Error Database.        Coordinate with the resolving team for submission of the RCA in the mentioned SLA and follow up with them so that the action stated in RCA can be performed to minimize the issue reoccurrence and permanent fix.
-        Review and document RCA with all possible reasons for cause of the issue and provide it to the client to propose for any changes needed to be executed for the Problem record.</p>
-      <p>•	Prepare Monthly report of all Problem tickets logged so that root cause of issues is documented in known error data base.        Update the Problem KPI’s to be submitted internally and externally to the customer to discuss for Service Level Reporting SLR and improve Problem Management Processed.         </p>
-      <p>• Managing and updating Configuration Items (CIs) in the CMDB as a supporting role.        Populating and ensuring accuracy of required fields for all registered CIs in the CMDB.
-        Handling Original CIs and reviewing operational and non-operational configuration items.        Assisting in discovering, controlling, and tracking relationships/dependencies between IT assets and Configuration Items.
-        Providing Support in discovering, controlling, and tracking relationships/dependencies between IT assets and CIs, working with support teams, product owners, and service managers.           </p>
-      <p>•	Act as a part of Editorial team for Knowledge base data present on the SharePoint for the users for quick reference to all the required inquiries and information.
-       Inform the resolving groups to create/delete/modify the SOP’s present on the Knowledge Database after Periodic reviews.
-       On behalf of Knowledge Manager inform the Knowledge Owner about the documents to be approved/rejected/retired from Knowledge database.
-       Ensure and maintain to provide access to relevant Knowledge user to access Knowledge Database by creating the required profile on Knowledge Database.           </p>
+      <div class="projects">
+        <div class="project-card">
+          <img src="./assests/images/projects/DXC Project.jpg" alt="VMAX Decommission project" onerror="this.src='https://via.placeholder.com/400x200?text=Project'">
+          <h3>Legacy Dell VMAX Decommission & Storage Migration</h3>
+          <p class="muted">Led RITM/Change actions in ServiceNow, coordinated vendors, released rack space and power savings, and created process improvements for datacenter decommissioning.</p>
+          <div style="margin-top:8px;">
+            <a class="btn" href="https://vanamali.netlify.app/" target="_blank">View</a>
+            <a class="btn" href="https://github.com/vanamalimatha123" target="_blank" style="margin-left:8px">Code</a>
           </div>
-  </div>
-</div>
-
-  <div class="morebtn">
-    <a href="./experience/index.html" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
-</section>
-<!-- experience section ends -->
-
-
- 
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assests/images/contact1.png" alt="">
-      </div>
-    <form action="#">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
         </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
-<!-- contact section ends -->
 
-
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Vanamali's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Please wait for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Projects</a>
-          <a href="#Achievements"><i class="fas fa-chevron-circle-right"></i> Achievements</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          
-          <p> <i class="fas fa-envelope"></i>vanamali121@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Vizag</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/vanamali-matha-811035232" class="fab fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/vanamalimatha123" class="fab fa-github" target="_blank"></a>
-              <a href="mailto:vanamali121@gmail.com" class="fas fa-envelope" target="_blank"></a>
-              <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d" class="fab fa-instagram" target="_blank"></a>
-              <a class="medium" href="https://medium.com/@mathavanamali121" target="_blank"><i class="fab fa-medium"></i></a>
-
+        <div class="project-card">
+          <img src="./assests/images/projects/3_Cloud Migration" alt="GCP readiness" onerror="this.src='https://via.placeholder.com/400x200?text=Project'">
+          <h3>GCP Readiness Program</h3>
+          <p class="muted">Led readiness program for 100+ employees: training, cloud onboarding, container orchestration best practices and collaboration with cross-functional teams for cloud projects.</p>
+          <div style="margin-top:8px;">
+            <a class="btn" href="https://github.com/vanamalimatha123/Migration-Projects" target="_blank">View</a>
           </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assests/images/projects/myprofile1.png" alt="Portfolio" onerror="this.src='https://via.placeholder.com/400x200?text=Project'">
+          <h3>Portfolio Website</h3>
+          <p class="muted">Personal portfolio and migration project showcase.</p>
+          <div style="margin-top:8px;">
+            <a class="btn" href="https://vanamali.netlify.app/" target="_blank">View</a>
+            <a class="btn" href="https://github.com/vanamalimatha123" target="_blank" style="margin-left:8px">Code</a>
+          </div>
+        </div>
       </div>
-  </div>
+    </section>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/vanamali-matha-811035232"> Vanamali</a></h1>
+    <!-- CERTIFICATIONS -->
+    <section id="certs" aria-labelledby="certs-heading">
+      <h2 class="heading" id="certs-heading"><i class="fas fa-certificate"></i> Certifications</h2>
 
-</section>
-<!-- footer section ends -->
+      <div class="card cert-row">
+        <!-- Replace image paths as required -->
+        <img src="./assests/images/All Cloud Certified/ITIL 4 Foundation.jpg" alt="ITIL 4 Foundation" onerror="this.src='https://via.placeholder.com/200x120?text=ITIL'">
+        <img src="./assests/images/All Cloud Certified/GCP ACE New Design.png" alt="GCP ACE" onerror="this.src='https://via.placeholder.com/200x120?text=GCP'">
+        <img src="./assests/images/All Cloud Certified/AWS CPC.png" alt="AWS" onerror="this.src='https://via.placeholder.com/200x120?text=AWS'">
+        <img src="./assests/images/All Cloud Certified/Microsoft Azure Fundamentals (AZ-900).png" alt="AZ-900" onerror="this.src='https://via.placeholder.com/200x120?text=AZ-900'">
+        <img src="./assests/images/All Cloud Certified/Oracle Cloud Infrastructure 2023 Certified Foundations Associate.jpg" alt="OCI" onerror="this.src='https://via.placeholder.com/200x120?text=OCI'">
+      </div>
+    </section>
 
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-heading">
+      <h2 class="heading" id="education-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
 
-<!-- scroll top btn -->
-<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
+      <div style="display:grid; gap:12px;">
+        <div class="card">
+          <strong>MBA – HR & Marketing</strong><br>
+          Maharajah’s Post Graduate College, Vizag — 2018–2021
+        </div>
+        <div class="card">
+          <strong>B.Sc. – Computer Science</strong><br>
+          Sri GCSR College, Rajam — 2015–2018
+        </div>
+      </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 class="heading" id="contact-heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <div class="contact-grid">
+        <div class="card">
+          <h3 style="margin-top:0;">Let's connect</h3>
+          <p class="muted">Feel free to reach out for roles in Service Delivery, ITSM, Project Coordination, or field service operations.</p>
 
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <div style="margin-top:10px;">
+            <p><strong>Email</strong><br><a href="mailto:mathavanamali121@gmail.com">mathavanamali121@gmail.com</a></p>
+            <p><strong>Phone</strong><br><a href="tel:+919381919840">+91-9381919840</a></p>
+            <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/vanamalimatha123" target="_blank">linkedin.com/in/vanamalimatha123</a></p>
+            <p><strong>GitHub</strong><br><a href="https://github.com/vanamalimatha123" target="_blank">github.com/vanamalimatha123</a></p>
+          </div>
 
-<!-- particle.js links -->
-<script src="./assests/js/particles.min.js"></script>
-<script src="./assests/js/app.js"></script>
+          <div style="margin-top:12px;">
+            <strong class="muted">Preferred locations</strong>
+            <div style="margin-top:6px;" class="muted">Chennai, Bangalore, Hyderabad, or Remote</div>
+          </div>
+        </div>
 
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="card form" aria-label="Contact form">
+          <form id="contactForm">
+            <div class="field">
+              <input id="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <input id="email" type="email" placeholder="Your email" required>
+            </div>
+            <div class="field">
+              <input id="phone" type="tel" placeholder="Phone (optional)">
+            </div>
+            <div class="field">
+              <textarea id="message" placeholder="Message" required></textarea>
+            </div>
 
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+            <div style="display:flex; gap:8px; align-items:center;">
+              <button id="sendBtn" type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+              <small class="muted">This will open your email client as a fallback (no backend required).</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<script src="./assests/js/script.js"></script>
+    <footer>
+      <div style="max-width:var(--maxwidth); margin:0 auto; padding:12px;">
+        <div class="muted">Designed with ♥ by Matha Vanamali • <a href="https://vanamali.netlify.app/" target="_blank" style="color:var(--accent); text-decoration:none;">Portfolio</a></div>
+        <div style="margin-top:6px;" class="muted">Last updated: Feb 2025</div>
+      </div>
+    </footer>
+  </main>
 
+  <!-- JS (small helpers) -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navbar = document.getElementById('navbar');
+    menuBtn.addEventListener('click', ()=> navbar.classList.toggle('open'));
+
+    // Active nav on scroll
+    const navLinks = document.querySelectorAll('nav.navbar a');
+    const sections = Array.from(document.querySelectorAll('main section'));
+    function onScroll(){
+      const y = window.scrollY + 110;
+      for(const s of sections){
+        if(!s.id) continue;
+        const top = s.offsetTop;
+        const h = s.offsetHeight;
+        const link = document.querySelector('nav.navbar a[href="#' + s.id + '"]');
+        if(y >= top && y < top + h){
+          navLinks.forEach(l=>l.classList.remove('active'));
+          if(link) link.classList.add('active');
+        }
+      }
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // contact form -> mailto fallback
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const msg = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      let body = 'Name: ' + name + '%0D%0A';
+      body += 'Email: ' + email + '%0D%0A';
+      if(phone) body += 'Phone: ' + phone + '%0D%0A';
+      body += '%0D%0A' + encodeURIComponent(msg);
+
+      // open mail client as fallback
+      window.location.href = 'mailto:mathavanamali121@gmail.com?subject=' + subject + '&body=' + body;
+    });
+
+    // Basic small reveal animation for sections
+    const io = new IntersectionObserver((entries) => {
+      for(const e of entries){
+        if(e.isIntersecting) e.target.style.opacity = 1, e.target.style.transform = 'translateY(0)';
+      }
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('main section').forEach(s => {
+      s.style.opacity = 0;
+      s.style.transform = 'translateY(12px)';
+      s.style.transition = 'all 600ms cubic-bezier(.2,.9,.2,1)';
+      io.observe(s);
+    });
+
+    // Simple typing effect for hero subline (no external lib)
+    (function(){
+      const phrases = ['ServiceNow • ITIL • Incident & Change Management', 'Service Delivery • Dispatch • IMACD', 'SLA/OLA Governance • MIS & Dashboards'];
+      const el = document.createElement('div');
+      el.style.marginTop = '12px';
+      el.style.color = 'var(--muted)';
+      document.querySelector('.hero .left').appendChild(el);
+
+      let pi=0, idx=0, forward=true;
+      function step(){
+        const txt = phrases[pi];
+        el.textContent = txt.slice(0, idx);
+        if(forward){ idx++; if(idx>txt.length){ forward=false; setTimeout(step,1200); return; } }
+        else { idx--; if(idx<=0){ forward=true; pi=(pi+1)%phrases.length; } }
+        setTimeout(step, forward ? 60 : 30);
+      }
+      step();
+    })();
+  </script>
 </body>
 </html>
